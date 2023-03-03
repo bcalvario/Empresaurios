@@ -1,0 +1,32 @@
+/* Css Proyects */
+:root {
+    --black: #333;
+    --white: #fff;
+}
+
+.linkPDF .contentBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    z-index: 1;
+    background: #f8f8f8;
+    padding: 30px;
+}
+
+.linkPDF .contentBox a {
+    color: var(--black);
+    font-size: 1.25em;
+    font-weight: 400;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.linkPDF .contentBox a:hover {
+    text-decoration: underline;
+}
+
+.linkPDF .contentBox a:active {
+    color: #2c752e;
+}

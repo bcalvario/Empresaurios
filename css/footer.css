@@ -1,0 +1,43 @@
+/* Css footer */
+:root {
+    --black: #333;
+    --white: #fff;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 6.5em;
+    background: #f8f8f8;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+footer .logo2 {
+    width: 6.5em;
+    height: 6.5em;
+}
+
+footer .footerMenu {
+    display: flex;
+}
+
+footer .footerMenu li {
+    list-style: none;
+}
+
+footer .footerMenu li a {
+    display: inline-block;
+    margin: 1.25em;
+    text-decoration: none;
+    color: var(--black);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.copyrightText {
+    color: var(--black);
+    text-align: center;
+    letter-spacing: 1px;
+}

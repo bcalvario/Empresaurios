@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/navbar-togglemenu.css">
+    <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="./css/aboutUs.css">
+    <link rel="stylesheet" href="./css/proyects.css">
+    <link rel="stylesheet" href="./css/linkPDF.css">
+    <link rel="stylesheet" href="./css/contact.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/responsive-design.css">
+    <title>Empresaurios y Asociados S.A de C.V.</title>
+</head>
+<body>
+
+    <!-- Navbar and toogle menu -->
+    <header>
+        <a href="#" class="name"> Empresaurios y Asociados S.A de C.V. </a>
+        <div class="toggleMenu" id="toggleMenu"></div>
+    </header>
+    <ul class="navigation" id="navigation">
+        <li> <a href="#home" onclick="removeMenu()">Home</a> </li>
+        <li> <a href="#about" onclick="removeMenu()">¿Quiénes somos?</a> </li>
+        <li> <a href="#post" onclick="removeMenu()">Proyectos</a> </li>
+        <li> <a href="#linkPDF" onclick="removeMenu()">Documentación</a> </li>
+        <li> <a href="#contact" onclick="removeMenu()">Contáctanos</a> </li>
+    </ul>
+
+    <!-- Home -->
+    <section class="home" id="home">
+        <img src="./imgs/banner.jpg" class="cover">
+        <div class="contentBox">
+            <img src="./imgs/dino.png" class="logo">
+            <h2> Bienvenido a la única empresa que te ayudará a hacer crecer tu negocio. </h2>
+            <a href="#about" class="btn"> ¿Quiénes somos? </a>
+        </div>
+    </section>
+
+    <!-- About us -->
+    <section class="about" id="about">
+        <div class="title">
+            <h2>¿Quienes somos?</h2>
+        </div>
+        <div class="contentBox">
+            <div class="content">
+                <h3>Propuesta de valor</h3>
+                    <p> 
+                        Somos la primera solución en redes de negocios que no cobra comisiones por 
+                        poner en contacto a proveedores certificados con negocios que los necesitan 
+                        y mejorar el alcance de potenciales clientes. Ademas evitaremos tiempos de espera, trámites y filas.
+                    </p>
+                <h3>Misión</h3>
+                    <p> 
+                        Ayudar a los emprendedores a conectar con las grandes empresas, creando 
+                        así una comunidad más fuerte de comerciantes.
+                    </p>
+                <h3>Visión</h3>
+                    <p>
+                        Nos vemos interconectando pequeños negocios para hacer crecer su red de 
+                        contactos logrando expandir su horizonte y convirtiendo el pequeño negocio 
+                        en un negocio más grande.
+                    </p>
+                <h3>Valores</h3>
+                    <p>
+                        <ul class="values">
+                            <li>• Empáticos.</li>
+                            <li>• Solidarios.</li>
+                            <li>• Emprendedores e innovadores.</li>
+                            <li>• Enfocados en nuestros clientes.</li>
+                            <li>• Preocupados por estas generaciones y por las que vienen.</li>
+                        </ul>
+                    </p>
+            </div>
+            <div class="content">
+                <div class="imgBox">
+                    <img src="./imgs/dinologo.jpeg" class="cover"> 
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Proyects -->
+    <section class="post" id="post">
+        <div class="title">
+            <h2>Últimos proyectos.</h2>
+            <p>
+                A continuación le presentamos nuestros últimos proyectos, con la finalidad de mostrarle a
+                nuestro posible cliente que somos capaces de realizar cualquier tipo de proyecto siendo totalmente
+                responsables ambientalmente, dejando toda nuestra documentación en formato digital sin uso de papel.
+            </p>
+        </div>
+        <div class="contentBox">
+            <div class="postColumn">
+                <!-- Proyect 1 -->
+                <div class="postBox">
+                    <div class="imgBox">
+                        <img src="./imgs/treasure-game.png" class="cover">
+                    </div>
+                    <div class="textBox">
+                        <p>
+                            Pequeño juego que consiste en encontrar un tesoro a partir de clickeos, haciendo que el usuario
+                            se divierta un poco a partir de 6 niveles generados aleatoriamente. El programa te notifica qué tan
+                            cerca está el tesoro y en cuántos clickeos se encontró el dicho tesoro.
+                        </p>
+                        <a href="https://github.com/DerekAlmanza/Find_The_Treasure_JS" class="btn">Ver repositorio</a>
+                    </div>
+                </div>
+                <!-- Proyect 2 -->
+                <div class="postBox">
+                    <div class="imgBox">
+                        <img src="./imgs/pasaporte.jpg" class="cover">
+                    </div>
+                    <div class="textBox">
+                        <p>
+                            Página para sacar citas en linea para tramitar el pasaporte. En esta página
+                            se puede hacer cita, modificar la fecha de la cita para tramitar el pasaporte
+                            de manera más rápida evitando las filas que se harían si el trámite se
+                            realizará en vivo. La cita para tramitar el pasaporte la podras tramitar
+                            desde cualquier lugar del mundo.
+                        </p>
+                        <a href="https://github.com/RicardoBNR/DIU_Tarea1" class="btn">Ver repositorio</a>
+                    </div>
+                </div>
+                <!-- Proyect 3 -->
+                <div class="postBox">
+                    <div class="imgBox">
+                        <img src="./imgs/PDI.png" class="cover">
+                    </div>
+                    <div class="textBox">
+                        <p>
+                            Programa que procesa a una imagen y es capaz de transformarla y editarla a partir de diversos
+                            filtros, algunos son:
+                            <ul class="values">
+                                <li>• Filtro Gris</li>
+                                <li>• Mosaico</li>
+                                <li>• Convoluciones</li>
+                                <li>• Transforma la imagen a letras</li>
+                                <li>• Transforma la imagen a fichas de dominó</li>
+                                <li>• Transforma la imagen a cartas de naipes</li>
+                            </ul>
+                            Entre otros.
+                        </p>
+                        <a href="https://github.com/DerekAlmanza/procesoDigitalimagenes" class="btn">Ver repositorio</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Link PDF -->
+    <section class="linkPDF" id="linkPDF">
+        <div class="title">
+            <h2> Documentación </h2>
+            <p>
+                Sabiendo que usted estará interesado en saber más a fondo nuestra forma de trabajar dentro de <b>Empresaurios y Asociados S.A de C.V.</b>,
+                nosotros anexamos nuestra liga a un PDF para que usted pueda visualizar la correspondiente documentación
+                y la alta meticulosidad con la que desarrollamos un proyecto.
+            </p>
+        </div>
+        <div class="contentBox">
+            <a href="https://docs.google.com/document/d/1sU0qhTInNuOe3KLOz5Dn2NOJSAfjp5a-o2SMQ1kSCqc/edit"> Cuestioario mayoristas. </a>
+            <a href=""> Item 2. </a>
+            <a href=""> Item 3. </a>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact" id="contact">
+        <div class="title">
+            <h2> Contáctanos </h2>
+            <p>
+                En esta sección usted es capaz de informarnos de cualquier propuesta y nosotros lo leeremos con
+                detenimiento. Gracias por su preferencia.
+            </p>
+        </div>
+        <div class="contactForm">
+            <div class="row">
+                <input type="text" name="" placeholder="Nombre">
+                <input type="text" name="" placeholder="Apellido">
+            </div>
+            <div class="row">
+                <input type="text" name="" placeholder="Email">
+                <input type="text" name="" placeholder="Número telefónico">
+            </div>
+            <div class="row2">
+                <textarea name="" id="" placeholder="Comentario"></textarea>
+            </div>
+            <div class="row2">
+                <input type="submit" value="Enviar" class="btn">
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <img src="./imgs/dino.png" class="logo2">
+        <ul class="footerMenu" id="navigation">
+            <li> <a href="#home">Home</a> </li>
+            <li> <a href="#about">¿Quiénes somos?</a> </li>
+            <li> <a href="#post">Proyectos</a> </li>
+            <li> <a href="#contact">Contáctanos</a> </li>
+        </ul>
+        <p class="copyrightText">Copyright © 2023 Empresaurios y Asociados S.A de C.V.. All Rights Reserved.</p>
+    </footer>
+
+
+</body>
+
+<script src="./js/index.js"></script>
+
+</html>

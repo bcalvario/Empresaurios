@@ -1,0 +1,67 @@
+:root {
+    --black: #333;
+    --white: #fff;
+}
+
+@media (max-width: 62em) {
+    
+    header {
+        padding: 1.25em 1.25em;
+    }
+    
+    header.sticky {
+        padding: .75em 1.25em;
+    }
+
+    section {
+        padding: 1.25em;
+    }
+
+    .home .contentBox {
+        padding: 2.5em 1.75em;
+    }
+
+    .about .contentBox {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .post .contentBox .postColumn {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .post .contentBox .postColumn .postBox {
+        height: 18.75em;
+    }
+
+    .contact {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .contact .contactForm .row {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    footer {
+        padding: 2.5em 1.25em;
+    }
+
+    footer .footerMenu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 1.25em 0;
+    }
+
+    footer .footerMenu li a {
+        margin: 0.5em 0;
+    }
+
+    .title {
+        padding-top: 3.25em;
+    }
+
+}

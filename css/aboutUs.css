@@ -1,0 +1,71 @@
+/* Css About Us */
+:root {
+    --black: #333;
+    --white: #fff;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.title h2 {
+    position: relative;
+    font-weight: 500;
+    letter-spacing: 2px;
+    font-size: 1.6em;
+    text-transform: uppercase;
+    color: var(--black);
+}
+
+.title h2:before {
+    content: '';
+    position: absolute;
+    bottom: -.65em;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2.5em;
+    height: .375em;
+    background: var(--black);
+}
+
+p {
+    margin-bottom: 0.5em;
+    font-weight: 300;
+    text-align: justify;
+    color: var(--black);
+}
+
+.about .contentBox {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 2.5em;
+    grid-gap: 40px;
+}
+
+.about .contentBox .content {
+    position: relative;
+}
+
+.about .contentBox .content h3 {
+    position: relative;
+    margin-bottom: .5em;
+    font-weight: 500;
+    letter-spacing: 2px;
+    font-size: 1.4em;
+    text-transform: uppercase;
+    color: var(--black);
+}
+
+.about .contentBox .content .imgBox {
+    min-height: 25em;
+}
+
+.values li {
+    list-style: none;
+    font-weight: 300;
+}

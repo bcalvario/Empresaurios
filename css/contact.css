@@ -1,0 +1,60 @@
+/* Css Contact */
+:root {
+    --black: #333;
+    --white: #fff;
+}
+
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact .contactForm {
+    position: relative;
+    width: 100%;
+    max-width: 44em;
+    margin-top: 1.25em;
+}
+
+.contact .contactForm .row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1.5em;
+    margin-top: 1.5em;
+    width: 100%;
+}
+
+.contact .contactForm .row2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.5em;
+    width: 100%;
+}
+
+.contact .contactForm .row input,
+.contact .contactForm .row2 textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--black);
+    outline: none;
+    background: var(--white);
+    color: var(--black);
+    font-size: 1em;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+.contact .contactForm .row2 textarea {
+    resize: none;
+    height: 12.5em;
+}
+
+::placeholder {
+    color: var(--black);
+}
+
+.contact .contactForm .row2 input[type="submit"]:hover {
+    cursor: pointer;
+}

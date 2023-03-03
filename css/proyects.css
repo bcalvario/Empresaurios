@@ -1,0 +1,69 @@
+/* Css Proyects */
+:root {
+    --black: #333;
+    --white: #fff;
+}
+
+.title p {
+    margin-top: 2.5em;
+    max-width: 44em;
+    text-align: center;
+}
+
+.post {
+    position: relative;
+}
+
+.post .contentBox {
+    position: relative;
+}
+
+.post .contentBox .postColumn {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1.25em;
+    margin-top: 1.25em;
+}
+
+.post .contentBox .postColumn .postBox {
+    position: relative;
+    width: 100%;
+    height: 25em;
+    margin-top: 1.25em;
+}
+
+.post .contentBox .postColumn .postBox .textBox {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 1.25em;
+    background: var(--white);
+    transition: 0.5s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.post .contentBox .postColumn .postBox:hover .textBox {
+    opacity: 0.9;
+    visibility: visible;
+}
+
+.post .contentBox .postColumn .postBox .textBox p {
+    font-weight: 300;
+    font-size: 1em;
+    letter-spacing: 1px;
+    color: var(--black);
+}
+
+.post .contentBox .postColumn .postBox .textBox .btn {
+    padding: 4px 10px;
+    background: var(--black);
+    color: var(--white);
+}

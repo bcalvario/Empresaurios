@@ -1,0 +1,76 @@
+/* Css Home */
+:root {
+    --black: #333;
+    --white: #fff;
+}
+
+section {
+    position: relative;
+    padding: 100px;
+    width: 100%;
+    min-height: 100vh;
+    background: var(--white);
+}
+
+.cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home .contentBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    z-index: 1;
+    background: #f8f8f8;
+    padding: 30px;
+}
+
+.logo {
+    display: block;
+    margin: 0px auto 20px;
+    width: 250px;
+    height: 250px;
+}
+
+.home .contentBox h2 {
+    font-size: 1.6em;
+    font-weight: 500;
+    color: var(--black);
+    letter-spacing: 2px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.btn {
+    position: relative;
+    display: inline-block;
+    padding: 8px 20px;
+    margin-top: 20px;
+    border: 2px solid var(--black);
+    color: var(--black);
+    text-decoration: none;
+    font-size: 1.25em;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    transition: 0.25s;
+}
+
+.btn:hover {
+    color: var(--white);
+    background: var(--black);
+}
+
